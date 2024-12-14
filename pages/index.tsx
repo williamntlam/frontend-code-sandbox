@@ -3,13 +3,13 @@ import { ReactTyped } from "react-typed";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <section className="text-center">
+    <div className="flex flex-col justify-between max-h-screen font-sans">
+      <main className="flex flex-col flex-grow justify-between max-h-screen">
+        <section className="flex-grow text-center py-8 flex flex-col items-center">
           {/* Title and introduction description for UIPlayground. */}
-          <h1 className="text-7xl">
+          <h1 className="text-5xl py-3">
             Welcome to{" "}
-            <div className="text-6xl font-bold">
+            <div className="text-4xl font-bold">
               <span className="text-red-500">U</span>
               <span className="text-orange-500">I</span>
               <span className="text-yellow-500">P</span>
@@ -25,7 +25,7 @@ export default function Home() {
               <span className="text-green-500">!</span>
             </div>
           </h1>
-          <p>
+          <p className="w-2/3 text-center mx-auto">
             UIPlayground is a dynamic and interactive frontend sandbox coding
             application designed for developers of all levels. Whether you're a
             seasoned pro or just starting out, UIPlayground provides a versatile
@@ -33,7 +33,8 @@ export default function Home() {
             test frontend code, and prototype new ideas in real-time.
           </p>
         </section>
-        <section className="flex flex-col gap-2 items-center font-bold text-6xl">
+
+        <section className="flex flex-col flex-grow items-center font-bold text-4xl py-8">
           {/* Typography of Major Languages like HTML, CSS, React, Angular, and JavaScript. */}
           {/* Type the languages in and out, in different colours. */}
           <ReactTyped
@@ -78,9 +79,11 @@ export default function Home() {
             className="text-emerald-600"
           />
         </section>
-        <section>
+        <section className="text-center py-8 flex-grow">
           {/* This is for the 'Get Started' button. */}
-          <button>Get Started</button>
+          <button className="text-black bg-white px-5 py-2 rounded-3xl">
+            Get Started
+          </button>
         </section>
       </main>
     </div>
