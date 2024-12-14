@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-between max-h-screen font-sans">
+    <div className="flex flex-col justify-between max-h-screen font-sans bg-gradient-to-br from-black via-gray-900 to-gray-800">
       <main className="flex flex-col flex-grow justify-between max-h-screen">
         <section className="flex-grow text-center py-8 flex flex-col items-center">
           {/* Title and introduction description for UIPlayground. */}
