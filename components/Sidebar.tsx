@@ -5,9 +5,18 @@ export default function Sidebar() {
     <aside className="w-64 h-full bg-gray-800 text-white fixed">
       {/* Options: Projects, Folders, Recently Deleted */}
       {/* Can also display the User Icon + name, etc when user authentification is added. */}
-      <section>
-        <Image src="/profile.png" width={350} height={350} className="p-10" />
+      <section className="text-center p-10">
+        <div className="flex flex-col items-center">
+          <Image
+            src="/profile.png"
+            width={350}
+            height={350}
+            alt="Profile Picture"
+          />
+          <h2 className="mt-4 text-xl font-semibold">Hello, William Lam!</h2>
+        </div>
       </section>
+
       <section>
         Navigation Buttons
         <nav>
