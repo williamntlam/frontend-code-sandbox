@@ -21,16 +21,24 @@ export default function Sidebar() {
         <nav>
           <ul className="space-y-4">
             <li>
-              <button>Projects</button>
+              <button className="hover:text-blue-600 transition-colors duration-900">
+                Projects
+              </button>
             </li>
             <li>
-              <button>Starred Projects</button>
+              <button className="hover:text-blue-600 transition-colors duration-900">
+                Starred Projects
+              </button>
             </li>
             <li>
-              <button>Templates</button>
+              <button className="hover:text-blue-600 transition-colors duration-900">
+                Templates
+              </button>
             </li>
             <li>
-              <button>Recently Deleted</button>
+              <button className="hover:text-blue-600 transition-colors duration-900">
+                Recently Deleted
+              </button>
             </li>
           </ul>
         </nav>
