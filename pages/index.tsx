@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -81,9 +82,11 @@ export default function Home() {
         </section>
         <section className="text-center py-8 flex-grow">
           {/* This is for the 'Get Started' button. */}
-          <button className="text-black bg-white px-5 py-2 rounded-3xl">
-            Get Started
-          </button>
+          <Link href="/dashboard">
+            <button className="text-black bg-white px-5 py-2 rounded-3xl">
+              Get Started
+            </button>
+          </Link>
         </section>
       </main>
     </div>
