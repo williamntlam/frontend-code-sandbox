@@ -17,12 +17,21 @@ export default function Sidebar() {
         </div>
       </section>
 
-      <section>
-        Navigation Buttons
+      <section className="text-center">
         <nav>
-          <ul>
-            <li>Projects</li>
-            <li>Recently Deleted</li>
+          <ul className="space-y-4">
+            <li>
+              <button>Projects</button>
+            </li>
+            <li>
+              <button>Starred Projects</button>
+            </li>
+            <li>
+              <button>Templates</button>
+            </li>
+            <li>
+              <button>Recently Deleted</button>
+            </li>
           </ul>
         </nav>
       </section>
