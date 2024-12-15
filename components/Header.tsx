@@ -1,3 +1,9 @@
 export default function Header() {
-  return <header>This is the header!</header>;
+  return (
+    <header>
+      <section>LOGO</section>
+      <section>Navigation</section>
+      <section>Profile Name (Only make it the first and last name)</section>
+    </header>
+  );
 }
