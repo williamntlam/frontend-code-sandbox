@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -21,24 +22,32 @@ export default function Sidebar() {
         <nav>
           <ul className="space-y-4">
             <li>
-              <button className="hover:text-blue-600 transition-colors duration-900">
-                Projects
-              </button>
+              <Link href="/dashboard/projects">
+                <button className="hover:text-blue-600 transition-colors duration-900">
+                  Projects
+                </button>
+              </Link>
             </li>
             <li>
-              <button className="hover:text-blue-600 transition-colors duration-900">
-                Starred Projects
-              </button>
+              <Link href="/dashboard/starred-projects">
+                <button className="hover:text-blue-600 transition-colors duration-900">
+                  Starred Projects
+                </button>
+              </Link>
             </li>
             <li>
-              <button className="hover:text-blue-600 transition-colors duration-900">
-                Templates
-              </button>
+              <Link href="/dashboard/templates">
+                <button className="hover:text-blue-600 transition-colors duration-900">
+                  Templates
+                </button>
+              </Link>
             </li>
             <li>
-              <button className="hover:text-blue-600 transition-colors duration-900">
-                Recently Deleted
-              </button>
+              <Link href="recently-deleted">
+                <button className="hover:text-blue-600 transition-colors duration-900">
+                  Recently Deleted
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>

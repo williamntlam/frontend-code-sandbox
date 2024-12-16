@@ -10,7 +10,7 @@ export default function DashboardSection() {
   const { section } = router.query;
 
   return (
-    <div>
+    <div className="flex space-x-4 h-screen">
       <Sidebar />
       {section === "projects" && <Projects />}
       {section === "starred-projects" && <StarredProjects />}
