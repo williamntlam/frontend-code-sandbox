@@ -8,7 +8,7 @@ export default function Home() {
       <main className="flex flex-col flex-grow justify-between max-h-screen">
         <section className="flex-grow text-center py-8 flex flex-col items-center">
           {/* Title and introduction description for UIPlayground. */}
-          <h1 className="text-5xl py-3">
+          <h1 className="text-5xl py-3 text-white">
             Welcome to{" "}
             <div className="text-4xl font-bold">
               <span className="text-red-500">U</span>
@@ -26,7 +26,7 @@ export default function Home() {
               <span className="text-green-500">!</span>
             </div>
           </h1>
-          <p className="w-2/3 text-center mx-auto">
+          <p className="w-2/3 text-center mx-auto text-white">
             UIPlayground is a dynamic and interactive frontend sandbox coding
             application designed for developers of all levels. Whether you're a
             seasoned pro or just starting out, UIPlayground provides a versatile
