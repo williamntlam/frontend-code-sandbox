@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 h-full bg-gray-800 text-white fixed">
+    <aside className="w-64 h-full bg-gray-800 text-white">
       {/* Options: Projects, Folders, Recently Deleted */}
       {/* Can also display the User Icon + name, etc when user authentification is added. */}
       <section className="text-center p-10">
