@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 h-full bg-gray-800 text-white flex flex-col justify-between">
+    <aside className="w-64 h-full bg-gradient-to-br from-black via-gray-900 to-gray-700 text-white flex flex-col justify-between">
       {/* Options: Projects, Folders, Recently Deleted */}
       {/* Can also display the User Icon + name, etc when user authentication is added. */}
       <div>
