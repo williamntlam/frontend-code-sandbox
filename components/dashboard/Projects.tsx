@@ -38,7 +38,7 @@ export default function Projects() {
               <button>
                 <li
                   key={index}
-                  className="bg-slate-400 w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+                  className="bg-gray-800 w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
                 >
                   <h3 className="text-white text-lg font-bold">
                     {project.title}
