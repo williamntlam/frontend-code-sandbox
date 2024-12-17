@@ -40,7 +40,7 @@ export default function RecentlyDeleted() {
               <button>
                 <li
                   key={index}
-                  className="bg-gradient-to-br from-black via-gray-900 to-gray-700 w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+                  className="bg-gradient-to-br from-black via-red-900 to-red-700 w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
                 >
                   <h3 className="text-white text-lg font-bold">
                     {project.title}
