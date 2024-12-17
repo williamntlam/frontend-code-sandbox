@@ -1,3 +1,5 @@
+import { calculateDaysDifference } from "../../utils/dateUtils";
+
 export default function Projects() {
   const projects = [
     {
@@ -45,7 +47,9 @@ export default function Projects() {
                   </h3>
                   <h4 className="text-gray-300">{project.framework}</h4>
                   <h4 className="text-gray-300">{project.creator}</h4>
-                  <h4 className="text-gray-300">{project.dateCreated}</h4>
+                  <h4 className="text-gray-300">
+                    {calculateDaysDifference(project.dateCreated)}
+                  </h4>
                 </li>
               </button>
             ))}

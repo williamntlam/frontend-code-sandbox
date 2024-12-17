@@ -1,4 +1,4 @@
-function calculateDaysDifference(dateCreated: string | Date): number {
+export function calculateDaysDifference(dateCreated: string | Date): string {
   const createdDate = new Date(dateCreated);
   const currentDate = new Date();
 
@@ -11,9 +11,15 @@ function calculateDaysDifference(dateCreated: string | Date): number {
   const timeDifference = currentDate.getTime() - createdDate.getTime();
 
   // convert to days
-  const dayDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-  return dayDifference;
+  if (daysDifference >= 365) {
+    const years = Math.floor(daysDifference / 365);
+    return `${years} year${years > 1 ? "s" : ""} ago`;
+  } else if (daysDifference >= 30) {
+    const months = Math.floor(daysDifference / 30);
+    return `${months} month${months > 1 ? "s" : ""} ago`;
+  } else {
+    return `${daysDifference} day${daysDifference > 1 ? "s" : ""} ago`;
+  }
 }
-
-module.exports = { calculateDaysDifference };
