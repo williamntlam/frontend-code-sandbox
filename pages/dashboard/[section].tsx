@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Projects from "@/components/dashboard/Projects";
 import StarredProjects from "@/components/dashboard/StarredProjects";
 import Templates from "@/components/dashboard/Templates";
 import RecentlyDeleted from "@/components/dashboard/RecentlyDeleted";
@@ -12,7 +11,6 @@ export default function DashboardSection() {
   return (
     <div className="flex space-x-4 h-screen">
       <Sidebar />
-      {section === "projects" && <Projects />}
       {section === "starred-projects" && <StarredProjects />}
       {section === "templates" && <Templates />}
       {section === "recently-deleted" && <RecentlyDeleted />}

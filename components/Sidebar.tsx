@@ -23,7 +23,7 @@ export default function Sidebar() {
           <nav>
             <ul className="space-y-4">
               <li>
-                <Link href="/dashboard/projects">
+                <Link href="/dashboard">
                   <button className="hover:text-blue-600 transition-colors duration-900">
                     Projects
                   </button>
