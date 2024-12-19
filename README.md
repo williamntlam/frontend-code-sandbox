@@ -28,6 +28,7 @@ A **Frontend Code Sandbox** is a web-based platform where users can write HTML, 
 ## Tech Stack
 
 - **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **Backend Framework**: [Nest.js](https://nestjs.com/)
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **Code Editor**: [Monaco Editor](https://microsoft.github.io/monaco-editor/)
 - **Containerization**: [Docker](https://www.docker.com/)
