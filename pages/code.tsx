@@ -1,6 +1,7 @@
 import { Editor } from "@monaco-editor/react";
 import { useState } from "react";
 import FileTree from "@/components/code/FileTree";
+import Header from "@/components/Header";
 
 export default function CodePage() {
   const [code, setCode] = useState<string>(`<!DOCTYPE html>
@@ -18,33 +19,36 @@ export default function CodePage() {
         </html>`);
 
   return (
-    <main className="flex h-screen">
-      <section className="w-1/4">
-        <FileTree />
-      </section>
-      <section className="w-2/4">
-        <Editor
-          height="100%"
-          width="100%"
-          theme="vs-dark"
-          defaultLanguage="javascript"
-          defaultValue="// Write your code here."
-          options={{
-            minimap: { enabled: true },
-            automaticLayout: true,
-          }}
-        />
-      </section>
-      <section className="flex-grow">
-        <div style={{ flex: 1 }}>
-          <iframe
-            title="Live Preview"
-            srcDoc={code} // Dynamically injects the HTML, CSS, and JS code
-            style={{ width: "100%", height: "100%", border: "none" }}
-            sandbox="allow-scripts allow-same-origin"
+    <main className="h-screen">
+      <Header />
+      <div className="flex">
+        <section className="w-1/4">
+          <FileTree />
+        </section>
+        <section className="w-2/4">
+          <Editor
+            height="100%"
+            width="100%"
+            theme="vs-dark"
+            defaultLanguage="javascript"
+            defaultValue="// Write your code here."
+            options={{
+              minimap: { enabled: true },
+              automaticLayout: true,
+            }}
           />
-        </div>
-      </section>
+        </section>
+        <section className="flex-grow">
+          <div style={{ flex: 1 }}>
+            <iframe
+              title="Live Preview"
+              srcDoc={code} // Dynamically injects the HTML, CSS, and JS code
+              style={{ width: "100%", height: "100%", border: "none" }}
+              sandbox="allow-scripts allow-same-origin"
+            />
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
