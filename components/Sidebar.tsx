@@ -30,21 +30,21 @@ export default function Sidebar() {
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard/starred-projects">
+                <Link href="/starred-projects">
                   <button className="hover:text-blue-600 transition-colors duration-900">
                     Starred Projects
                   </button>
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard/templates">
+                <Link href="/templates">
                   <button className="hover:text-blue-600 transition-colors duration-900">
                     Templates
                   </button>
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard/recently-deleted">
+                <Link href="/recently-deleted">
                   <button className="hover:text-blue-600 transition-colors duration-900">
                     Recently Deleted
                   </button>

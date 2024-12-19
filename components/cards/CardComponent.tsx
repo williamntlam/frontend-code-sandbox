@@ -1,19 +1,27 @@
-import { calculateDaysDifference } from "../../utils/dateUtils";
+import { calculateDaysDifference } from "@/utils/dateUtils";
+import { Project } from "@/interfaces/projectInterface";
 
-export default function Projects() {
+interface CardComponentProps {
+  projects: Project[];
+  gradient: string;
+  title: string;
+}
+
+export default function CardComponent({
+  projects,
+  gradient,
+  title,
+}: CardComponentProps) {
   return (
     <main className="p-5">
       <div>
-        <h2 className="text-3xl text-bold">Projects</h2>
+        <h2 className="text-3xl text-bold">{title}</h2>
         <section className="pt-2">
-          {/* This is where all the user's projects will be displayed. */}
-          {/* Attributes: Framework, Creator, Date Created, Title */}
           <ul className="flex flex-wrap -mx-2 -my-2">
-            {projects.map((project, index) => (
-              <button>
+            {projects.map((project: Project, index: number) => (
+              <button key={index}>
                 <li
-                  key={index}
-                  className="bg-gradient-to-br w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+                  className={`bg-gradient-to-br ${gradient} w-48 h-48 m-2 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl`}
                 >
                   <h3 className="text-white text-lg font-bold">
                     {project.title}
