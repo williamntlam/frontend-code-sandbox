@@ -91,9 +91,9 @@ export default function FileExplorerPage() {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-gradient-to-br from-black via-gray-900 to-gray-700">
       {/* File Tree */}
-      <div className="flex-grow">
+      <div className="flex-grow text-white">
         <h2 className="p-4 text-lg font-semibold">File Tree</h2>
         <FileTree structure={fileTree} onFileSelect={handleFileSelect} />
       </div>
