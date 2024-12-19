@@ -52,7 +52,7 @@ export default function Sidebar() {
               </li>
               <li>
                 <Link href="/code">
-                  <button className="hover:text-blue-600 transition-colors duration-900">
+                  <button className="hover:text-blue-600 transition-colors duration-900 font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent">
                     Code Playground
                   </button>
                 </Link>
