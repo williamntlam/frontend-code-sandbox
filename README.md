@@ -1,7 +1,7 @@
 
 # Frontend Code Sandbox
 
-A **Frontend Code Sandbox** is a web-based platform where users can write HTML, CSS, and JavaScript in separate editors and view the rendered output in real-time. This project is built using **Next.js**, styled with **TailwindCSS**, and containerized using **Docker**.
+A **Frontend Code Sandbox** is a web-based platform where users can write HTML, CSS, and JavaScript in separate editors and view the rendered output in real-time. This project is built using **Next.js**, **Nest.js**, **TypeORM**, styled with **TailwindCSS**, and containerized using **Docker**.
 
 ---
 
