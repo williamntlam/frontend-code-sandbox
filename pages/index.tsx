@@ -82,7 +82,7 @@ export default function Home() {
         </section>
         <section className="text-center py-8 flex-grow">
           {/* This is for the 'Get Started' button. */}
-          <Link href="/dashboard">
+          <Link href="/projects">
             <button className="text-black bg-white px-5 py-2 rounded-3xl">
               Get Started
             </button>
