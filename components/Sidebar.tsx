@@ -50,6 +50,13 @@ export default function Sidebar() {
                   </button>
                 </Link>
               </li>
+              <li>
+                <Link href="/code">
+                  <button className="hover:text-blue-600 transition-colors duration-900">
+                    Code Playground
+                  </button>
+                </Link>
+              </li>
             </ul>
           </nav>
         </section>
