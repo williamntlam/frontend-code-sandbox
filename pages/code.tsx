@@ -1,5 +1,6 @@
 import { Editor } from "@monaco-editor/react";
 import { useState } from "react";
+import FileTree from "@/components/code/FileTree";
 
 export default function CodePage() {
   const [code, setCode] = useState<string>(`<!DOCTYPE html>
@@ -18,7 +19,10 @@ export default function CodePage() {
 
   return (
     <main className="flex h-screen">
-      <section className="w-1/2">
+      <section className="w-1/4">
+        <FileTree />
+      </section>
+      <section className="w-2/4">
         <Editor
           height="100%"
           width="100%"
